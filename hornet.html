@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="autor" content="Erick">
+        <meta name="description" content="fazendo uma breve apresentação minha">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hornet da sabedoria</title>
+        <style>
+            body{
+                color: white; background-color: black; text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    
+<h1>Pergunte à Hornet da sabedoria!</h1>
+
+<img height = 380px src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/hollow-knight-wiki/7/77/Hornet_transparent.png" alt="foca">
+
+<div><input type="text" class="alt1"> ou  <div><input type="text" class="alt2">
+
+<button type='butao' onclick="resposta()">Perguntar</button>
+
+<script>
+    function resposta(){
+        var qual = Math.floor(Math.random() * 10);
+        if (qual % 2)
+            alert("A Hornet escolheu " + document.querySelector(".alt1").value)
+        else
+            alert("A Hornet escolheu " + document.querySelector(".alt2").value)
+    }
+</script>
+
+</body>
+</html>
